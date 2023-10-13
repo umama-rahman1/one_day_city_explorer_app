@@ -17,6 +17,7 @@ class ItinerarySelectionScreen extends StatelessWidget {
               Expanded(
                 child: GridView.count(
                     padding: const EdgeInsets.all(20),
+                    childAspectRatio: 0.5,
                     crossAxisCount: 2,
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10,
@@ -70,6 +71,7 @@ class ItinerarySelectionScreen extends StatelessWidget {
         onTap: onTap,
         child: Container(
           decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10)),
             image: DecorationImage(
               image: AssetImage(backgroundImage),
               fit: BoxFit.cover,
