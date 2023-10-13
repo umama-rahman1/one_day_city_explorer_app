@@ -12,6 +12,7 @@ class ItinerarySelectionScreen extends StatelessWidget {
           height: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
             children: [
               Expanded(
                 child: GridView.count(
@@ -65,8 +66,6 @@ class ItinerarySelectionScreen extends StatelessWidget {
   Widget buildCategoryTile(
       String title, String backgroundImage, void Function()? onTap) {
     return Container(
-      height: 900, // set the height of the container
-      width: 200, // set the width of the container
       child: InkWell(
         onTap: onTap,
         child: Container(
