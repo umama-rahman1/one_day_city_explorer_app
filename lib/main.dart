@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'routes/first_route.dart';
+import 'welcome_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(
+    title: 'Tourism App',
+    home: WelcomeScreen(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
