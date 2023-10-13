@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'routes/first_route.dart';
 import 'welcome_screen.dart';
 
 void main() {
