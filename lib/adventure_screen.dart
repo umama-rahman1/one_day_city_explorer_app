@@ -1,5 +1,6 @@
 // create an adventure enthusiasts page with one-day itinerary using list view for all the activities
 import 'package:flutter/material.dart';
+import 'util/activity_tile.dart';
 
 class AdventureScreen extends StatelessWidget {
   const AdventureScreen({super.key});
@@ -29,31 +30,4 @@ class AdventureScreen extends StatelessWidget {
               "Drive to Lynn Canyon Park, a nature lover's paradise just a short distance from Vancouver. This park boasts an array of hiking trails that wind through lush forests, leading you to the iconic suspension bridge that offers thrilling views of the canyon below. To beat the heat, take a refreshing dip in the natural pools beneath the cascading waterfalls. Lynn Canyon Park is a serene escape into the beauty of the Pacific Northwest, offering a perfect blend of adventure and relaxation for a memorable day trip."),
         ]));
   }
-}
-
-//create the buildActivityTile widget function
-Widget buildActivityTile(
-    String title, String backgroundImage, String description) {
-  return Card(
-    elevation: 4.0,
-    child: Column(children: [
-      Text(title,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 24,
-            color: Colors.black,
-            fontWeight: FontWeight.bold,
-          )),
-      Container(
-          height: 200.0,
-          child: Ink.image(
-            image: AssetImage(backgroundImage),
-            fit: BoxFit.cover,
-          )),
-      Container(
-          padding: EdgeInsets.all(10.0),
-          alignment: Alignment.center,
-          child: Text(description)),
-    ]),
-  );
 }
