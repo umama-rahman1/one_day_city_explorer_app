@@ -1,17 +1,13 @@
-// create an adventure enthusiasts page with one-day itinerary using list view for all the activities
 import 'package:flutter/material.dart';
 import 'util/activity_tile.dart';
 
 class AdventureScreen extends StatelessWidget {
   const AdventureScreen({super.key});
-  //create a flutter page with a list view of all the activities
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Text('Adventure Enthusiasts')),
         body: ListView(children: <Widget>[
-          //create large tiles for activity suggestions.
-          // each tile should include a name, image and description
           buildActivityTile(
               'Grouse Mountain',
               'assets/activities/grouse_grind.png',
