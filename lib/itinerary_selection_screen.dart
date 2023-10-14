@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'adventure_screen.dart';
 import 'history_screen.dart';
 import 'culinary_screen.dart';
+import 'nightlife_revelers.dart';
 
 class ItinerarySelectionScreen extends StatelessWidget {
   const ItinerarySelectionScreen({super.key});
@@ -66,6 +67,11 @@ class ItinerarySelectionScreen extends StatelessWidget {
                         'assets/itinerary/nightlife.jpg',
                         () {
                           // Navigate to the Nightlife category screen
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const NightlifeScreen()),
+                          );
                         },
                       ),
                     ]),
