@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'adventure_screen.dart';
+import 'history_screen.dart';
 
 class ItinerarySelectionScreen extends StatelessWidget {
   const ItinerarySelectionScreen({super.key});
@@ -40,6 +41,11 @@ class ItinerarySelectionScreen extends StatelessWidget {
                         'assets/itinerary/history.jpg',
                         () {
                           // Navigate to the History category screen
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HistoryScreen()),
+                          );
                         },
                       ),
                       buildCategoryTile(
