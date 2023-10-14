@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'adventure_screen.dart';
 import 'history_screen.dart';
+import 'culinary_screen.dart';
 
 class ItinerarySelectionScreen extends StatelessWidget {
   const ItinerarySelectionScreen({super.key});
@@ -53,6 +54,11 @@ class ItinerarySelectionScreen extends StatelessWidget {
                         'assets/itinerary/culinary.jpg',
                         () {
                           // Navigate to the Culinary category screen
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CulinaryScreen()),
+                          );
                         },
                       ),
                       buildCategoryTile(
