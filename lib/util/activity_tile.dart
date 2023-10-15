@@ -10,7 +10,7 @@ Widget buildActivityTile(
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 24,
-            color: Colors.black,
+            color: Colors.white,
             fontWeight: FontWeight.bold,
           )),
       Container(
