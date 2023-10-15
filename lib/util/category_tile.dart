@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Widget buildCategoryTile(
     String title, String backgroundImage, void Function()? onTap) {
@@ -17,11 +18,13 @@ Widget buildCategoryTile(
           child: Text(
             title,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: GoogleFonts.lobster(
+              textStyle: TextStyle(
               fontSize: 20,
-              color: Colors.white,
+              color: Color.fromARGB(255, 214, 255, 252),
               fontWeight: FontWeight.bold,
-            ),
+              backgroundColor: Colors.black.withOpacity(0.5),
+            )),
           ),
         ),
       ),
