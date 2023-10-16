@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'itinerary_selection_screen.dart';
+import 'itinerary_selection_screen_page_view.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -42,6 +43,36 @@ class WelcomeScreen extends StatelessWidget {
                   },
                   child: Text('Explore one-day itineraries'),
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    IconButton(
+                        iconSize: 40,
+                        onPressed: () {
+                          //Navigate to the itinerary selection screen when tapped.
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ItinerarySelectionScreen()),
+                          );
+                        },
+                        icon: const Icon(Icons.grid_view_sharp)),
+                    Text('or'),
+                    IconButton(
+                        iconSize: 40,
+                        onPressed: () {
+                          //Navigate to the itinerary selection screen when tapped.
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ItinerarySelectionScreenPageView()),
+                          );
+                        },
+                        icon: const Icon(Icons.send_to_mobile_sharp))
+                  ],
+                )
               ],
             ),
           )
