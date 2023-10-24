@@ -19,3 +19,14 @@ This is a Flutter app that allows users to explore activities and attractions th
 ## Implementation
 - This app was built using Flutter and relies on core widgets like GridView, ListView, PageView, etc. Image assets and text content are parameterized so the app can be adapted for any city.
 - Custom themes and fonts come from the Google Fonts package.
+
+## Screenshots:
+- Welcome Page
+<img width="367" alt="image" src="https://github.com/umama-rahman1/one_day_city_explorer_app/assets/25703445/1837821a-83c6-495e-ab72-2bf89e454c07">
+
+- Grid View
+<img width="365" alt="image" src="https://github.com/umama-rahman1/one_day_city_explorer_app/assets/25703445/fc93ba83-0aad-47b4-966e-d3ef9c79cc5e">
+
+- Activity Page
+<img width="360" alt="image" src="https://github.com/umama-rahman1/one_day_city_explorer_app/assets/25703445/c15616d1-57fd-4ea3-bf4a-64c5765c764d">
+
